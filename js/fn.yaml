@@ -1,0 +1,11 @@
+apiVersion: serverless.kyma-project.io/v1alpha1
+kind: Function
+metadata:
+  name: dzejes
+  namespace: aerfio
+spec:
+  source: "https://github.com/aerfio/gitops-fn-test"
+  baseDir: "/"
+  type: git
+  branch: "master"
+  dockerfile: "js/Dockerfile"
